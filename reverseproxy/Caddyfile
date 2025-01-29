@@ -1,0 +1,32 @@
+:80 {
+        handle * {
+                # Dev Server 
+                # reverse_proxy localhost:3000
+                # Prod Server
+                root * /var/www
+                try_files {path} {path}.html
+                file_server
+        }
+
+        handle /ws* {
+                reverse_proxy localhost:8080
+        }
+
+        handle /assignments* {
+                reverse_proxy localhost:8080
+        }
+
+        handle /logger* {
+                reverse_proxy localhost:8080
+        }
+
+        handle /upload* {
+                reverse_proxy localhost:8080
+        }
+
+        handle_path /api/dbc/* {
+                file_server {
+                        root /var/www/
+                }
+        }
+}
