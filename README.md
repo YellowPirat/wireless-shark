@@ -39,7 +39,7 @@ The backend reads the CAN messages from cansockets and broadcasts them over Webs
 
 ### Installation
 
-Follow the instructions of both [frontend](https://github.com/YellowPirat/wireless-shark-frontend?tab=readme-ov-file#getting-started) and [backend](https://github.com/YellowPirat/wireless-shark-backend#getting-started) repositories. An example revese proxy configuration can be find in this repository. 
+Follow the instructions of both [frontend](https://github.com/YellowPirat/wireless-shark-frontend?tab=readme-ov-file#getting-started) and [backend](https://github.com/YellowPirat/wireless-shark-backend#getting-started) repositories. An [example](https://github.com/YellowPirat/wireless-shark/blob/main/reverseproxy/Caddyfile) revese proxy configuration can be find in this repository. 
 
 ## License
 
